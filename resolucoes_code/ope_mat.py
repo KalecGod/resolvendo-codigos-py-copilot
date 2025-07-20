@@ -3,12 +3,20 @@
 num1 = float(input("Digite o primeiro número: "))
 num2 = float(input("Digite o segundo número: "))
 
-soma = num1 + num2
-divisao = num1 / num2
-multiplicacao = num1 * num2
-subtracao = num1 - num2
+print("Se a Operação for (+,-,*,/), o resultado será: ")
 
-print("A soma é: {:.2f}".format(soma))
-print("A divisão é: {:.2f}".format(divisao))
-print("A multiplicação é: {:.2f}".format(multiplicacao))
-print("A subtração é: {:.2f}".format(subtracao))
+operacao = input("Digite a operação desejada: ")
+
+if operacao == "+":
+    print("Resultado da soma:{:.2f}".format(num1 + num2))
+elif operacao == "-":
+    print("Resultado da subtração:{:.2f}".format(num1 - num2))  
+elif operacao == "*":
+    print("Resultado da multiplicação:{:.2f}".format(num1 * num2))
+elif operacao == "/":
+    if num2 != 0:
+        print("Resultado da divisão: {:.2f}".format(num1 / num2))
+    else:
+        print("Erro: Divisão por zero não é permitida.")
+else:
+    print("Operação inválida.")
