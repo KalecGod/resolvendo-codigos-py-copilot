@@ -10,7 +10,7 @@ operacao = input("Digite a operação desejada: ")
 if operacao == "+":
     print("Resultado da soma:{:.2f}".format(num1 + num2))
 elif operacao == "-":
-    print("Resultado da subtração:{:.2f}".format(num1 - num2))  
+    print("Resultado da subtração:{:.2f}".format(abs(num1 - num2)))
 elif operacao == "*":
     print("Resultado da multiplicação:{:.2f}".format(num1 * num2))
 elif operacao == "/":
@@ -19,4 +19,4 @@ elif operacao == "/":
     else:
         print("Erro: Divisão por zero não é permitida.")
 else:
-    print("Operação inválida.")
+    print("Operação inválida.")   
